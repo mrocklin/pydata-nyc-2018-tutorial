@@ -19,6 +19,7 @@ dependencies:
   - jupyter
   - ipywidgets
   - graphviz
+  - jupyterlab
   - pip:
     - kubernetes
     - git+https://github.com/dask/dask-kubernetes.git
