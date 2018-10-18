@@ -13,6 +13,8 @@ distributed:
       limit: 5s
 
 kubernetes:
+  count:
+    max: 30
   worker-template:
     metadata:
     spec:
