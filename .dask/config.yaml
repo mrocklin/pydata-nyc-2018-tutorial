@@ -1,3 +1,6 @@
+fuse_subgraphs: False
+fuse_ave_width: 0
+
 distributed:
   logging:
     bokeh: critical
