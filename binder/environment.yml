@@ -24,4 +24,5 @@ dependencies:
   - jupyterlab=0.35
   - pip:
     - kubernetes
+    - graphviz
     - git+https://github.com/dask/dask-kubernetes.git
