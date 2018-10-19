@@ -1,9 +1,9 @@
 results = []
 for x in data:
     if is_even(x):  # even
-        y = delayed(double)(x)
+        y = dask.delayed(double)(x)
     else:          # odd
-        y = delayed(inc)(x)
+        y = dask.delayed(inc)(x)
     results.append(y)
-    
-total = delayed(sum)(results)
+
+total = dask.delayed(sum)(results)
