@@ -34,3 +34,6 @@ for i in range(4):
                             }
 
                             parameter_scores.append((params, score))
+
+best = dask.delayed(max)(parameter_scores,
+                         key=lambda param_score: param_score[1])
