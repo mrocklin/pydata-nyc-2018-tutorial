@@ -24,6 +24,7 @@ dependencies:
   - nodejs
   - jupyterlab=0.35
   - matplotlib
+  - scikit-learn
   - pip:
     - kubernetes
     - graphviz
