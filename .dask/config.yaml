@@ -14,10 +14,12 @@ distributed:
 
 kubernetes:
   count:
-    max: 30
+    max: 50
   worker-template:
     metadata:
     spec:
+      nodeSelector:
+        dask-worker: True
       restartPolicy: Never
       containers:
       - args:
@@ -36,5 +38,5 @@ kubernetes:
             cpu: "1.75"
             memory: 7G
           requests:
-            cpu: "1.75"
+            cpu: 1
             memory: 7G
